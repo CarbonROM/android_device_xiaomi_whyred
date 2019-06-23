@@ -22,13 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
 
-# Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
-PRODUCT_NAME := aosip_whyred
+PRODUCT_NAME := carbon_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
